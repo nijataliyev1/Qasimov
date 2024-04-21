@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.send {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    padding-left: 10px;
+}
+
+.box {
+    margin: 10px 0;
+    background-color: blue;
+    color: white;
+    width: 250px;
+    padding: 10px;
+}
+
+.box .buttons {
+    margin: 5px;
+    display: flex;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 3px;
+}
+
+.edit,.send-div {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit form,.send-div form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+}
+
+.edit form  input,.send-div form  input{
+    margin-bottom: 10px;
+}
+
+.edit form button,.send-div form button {
+    width: fit-content;
+    padding: 5px 10px;
+    align-self: flex-end;
+}
